@@ -5,6 +5,7 @@
 
 <br>
 
+![image](https://user-images.githubusercontent.com/75478908/132339320-fce84cbe-f90f-4806-9ed7-9753757e7511.png)
 
 
 <p> How to run the app locally: </p>
