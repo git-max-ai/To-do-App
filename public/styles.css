@@ -1,0 +1,121 @@
+* {
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 154, 255) rgb(128, 128, 231);
+  }
+  
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(128, 128, 231);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 154, 255);
+    border-radius: 15px;
+    border: 3px solid rgb(206, 154, 255);
+  }
+  
+
+body {
+    background: rgb(128, 128, 231);
+    color: #000000;
+    margin-top: 20px;
+}
+
+.head{
+    display: block;
+    text-align: center;
+}
+
+
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .card .content{
+    position: absolute;
+    opacity: 1;
+    display: block;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;   
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(206, 154, 255);
+    color: white;
+}
+
+input:focus{
+    outline: none;
+    padding-left: 20px;
+}
+
+.content h2{
+    display: block;
+    background-color: rgb(218, 189, 245);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 300px;
+
+}
+
+.but{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+
+

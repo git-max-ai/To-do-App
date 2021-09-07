@@ -1,0 +1,46 @@
+<html>
+<head> 
+<title> ToDo App </title>
+ <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+ <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="head">
+<h1> To Do </h1>
+<form action ="/addtask" method="POST">
+<input type="text" name="newtask" placeholder="add new task" style="width: 50%; height: 40px; padding-left: 20px;background-color: rgb(231, 231, 231); border: none; border-radius: 20px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+<button> Add Task </button>
+</div>
+
+<div class="container">
+<div class="card">
+<div class="content">
+
+<h2> Added Task </h2>
+
+<% for( var i = 0; i < task.length; i++){ %>
+    <li><input style="margin-left: 15px;" type="checkbox" name="check" value="<%= task[i] %>" /> <%= task[i] %> </li>
+<% } %>
+<div class="but">
+<button formaction="/removetask" type="submit" id="top" > Remove </button>
+</div>
+</form>
+</div>
+</div>
+
+<div class="card">
+<div class="content">
+<h2> Completed task </h2>
+
+ <% for(var i = 0; i < complete.length; i++){ %>
+    <li><input style="margin-left: 15px;" type="checkbox" checked><%= complete[i] %> </li>
+<% } %>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
