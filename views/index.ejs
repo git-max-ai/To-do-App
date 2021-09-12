@@ -21,7 +21,7 @@
 <h2> Added Task </h2>
 
 <% for( var i = 0; i < task.length; i++){ %>
-    <li><input style="margin-left: 15px;" type="checkbox" name="check" value="<%= task[i] %>" /> <%= task[i] %> </li>
+    <li><input style="margin-left: 15px;" type="checkbox" class="checkbox-round" name="check" value="<%= task[i] %>" /> <%= task[i] %> </li>
 <% } %>
 <div class="but">
 <button formaction="/removetask" type="submit" id="top" > Remove </button>
@@ -32,10 +32,11 @@
 
 <div class="card">
 <div class="content">
+    
 <h2> Completed task </h2>
 
  <% for(var i = 0; i < complete.length; i++){ %>
-    <li><input style="margin-left: 15px;" type="checkbox" checked><%= complete[i] %> </li>
+    <li><input style="margin-left: 15px;" type="checkbox" class="checkbox-round" checked><%= complete[i] %> </li>
 <% } %>
 
 </div>

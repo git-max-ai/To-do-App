@@ -33,6 +33,12 @@ body {
     margin-top: 20px;
 }
 
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    cursor: pointer;
+}
+
 .head{
     display: block;
     text-align: center;
