@@ -29,8 +29,11 @@ app.post("/removetask", function(req, res) {
     res.redirect("/");
 });
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6b169b2ab66fb03aaa0942333f65293159805ebd
 app.get("/", function(req, res) {
     res.render("index", { task: task, complete: complete });
 });
